@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user_datum.email %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user_datum.username %>
+</p>
+
+<p>
+  <strong>Encrypted pass:</strong>
+  <%= @user_datum.encrypted_pass %>
+</p>
+
+<p>
+  <strong>Salt:</strong>
+  <%= @user_datum.salt %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @user_datum.phone %>
+</p>
+
+<p>
+  <strong>Created on:</strong>
+  <%= @user_datum.created_on %>
+</p>
+
+<%= link_to 'Edit', edit_user_datum_path(@user_datum) %> |
+<%= link_to 'Back', user_data_path %>
