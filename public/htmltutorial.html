@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<!--To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            header[role="banner"]{
+                background: #0063A6;
+                height: 200px;
+                width: 100%;
+            }
+            footer[role="content-info"]{
+                background: #0063A6;
+                margin: 40px 0 0 0;
+                padding: 0 0 40px 0;
+                display: block;
+            }
+            #content[role="main"]{
+                background: yellow;
+                border-top: 45px solid red;
+                /*margin: -45px auto 0;*/
+                padding: 24px 0 0 0;
+                width: 100%;
+            }
+            .main{
+                border-right: 4px solid #F0F0F0;
+                float: left;
+                margin: 0 18px 0 0;
+                padding: 0 18px 0 0;
+                position: relative;
+                width: 685px;
+            }
+            .secondary2{
+                float: left;
+                padding: 0 20px 0 0;
+                width: 270px;
+            }
+            .secondary{
+                 float: left;
+                padding: 0 20px 0 0;
+                width: 270px;
+            }
+            .post .header{
+                float: left;
+    margin: 0 0 20px;
+    padding: 0 0 10px 166px;
+    width: inherit;
+            }
+            .post .entry{
+                    float: right;
+    width: 500px;
+    position: relative;
+            }
+            .callout{
+                    margin: 1.5em 0 1.5em -1.5em;
+    padding: .75em .5em .75em 1em;
+    background: #fff;
+            }
+            .post aside{
+                    float: left;
+    font-size: 14.158px;
+    padding: 0 44px 0 0;
+    width: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <header role="banner">this is main header</header>
+        <main id="content" class="group" role="main">
+            <div class="main">
+                <article class="post group">
+                    <header class="header">this is inside main header</header>
+                    <div class="entry">
+                        <p class="callout">Updated on 20/10/17</p>
+                        <aside>dskjfndkjfndkjfnkd</aside>
+                    </div>
+                </article>
+            </div>
+            <aside class="secondary">this is right</aside>
+        </main>
+        <footer role="content-info">this is footer</footer>
+
+    </body>
+</html>-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+            }
+            .header{
+                font-size: 20px;
+                height: 100px;
+                background-color: red;
+            }
+            .footer{
+                font-size: 20px;
+                height: 100px;
+                background-color: yellow;
+                display: block;
+                /*position: relative;*/
+            }
+            .main{
+                background: #FFF;
+                margin: 0;
+                display: block;
+                
+                /*min-height: 500px;*/
+            }
+            .main2{
+                /*border-right: 4px solid #F0F0F0;*/
+                float: left;
+                /*margin: 0 18px 0 0;*/
+                /*padding: 0 18px 0 0;*/
+                position: relative;
+                width: 82%;
+                min-height: 100vh;
+                display: block;
+                
+            }
+            .right-article{
+                float: left;
+                padding: 0 20px 0 0;
+                width: 18%;
+                display: inline-block;
+                position: absolute;
+                min-height: 100%;
+                background-color: grey;
+                margin-left: 10px;
+                /*display: block;*/
+            }
+            .left-article{
+                background-color: grey;
+                float: left;
+                font-size: 14.158px;
+                width: 15%;
+                display: inline-block;
+                position: absolute;
+                min-height: 100%;
+                margin-right: 10px;
+            }
+            .entry{
+                float: right;
+                width: 86%;
+            }
+            .post{
+                padding: 0 0 0 20px;
+            }
+            .post header{
+                float: left;
+                margin: 0 0 20px;
+                padding: 0 0 10px 166px;
+                width: inherit;
+            }
+            blockquote,.callout{
+                box-shadow: 0 0 6px rgba(0,0,0,0.5);
+                border-left: .5em solid #fff;
+                /*margin: 1.5em 0 1.5em -1.5em;*/
+                padding: .75em .5em .75em 1em;
+                background: #fff;
+            }
+            blockquote:before{
+                display: block;
+                height: 0;
+                content: "“";
+                margin-left: -.95em;
+                font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+                color: #999;
+            }
+            blockquote{
+                border-left: 0.5em solid #DDD
+            }
+            header{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">this is main header</header>
+        <div class="main">
+            <div class="main2">
+                <article class="post group">
+                    <div class="entry">
+                        <p class="callout">We doctors are a bunch of chums using HTML5 and writing 
+                            about how we do it. Apart from spurious requests for medical 
+                            advice, the questions we receive most are about using the 
+                            section element, and we realise that we’ve been using the section 
+                            element incorrectly all this time.</p></br>
+                        <blockquote>
+                            <p>We doctors are a bunch of chums using HTML5 and writing 
+                                about how we do it. Apart from spurious requests for medical 
+                                advice, the questions we receive most are about using the 
+                                section element, and we realise that we’ve been using the section 
+                                element incorrectly all this time.</p>
+                        </blockquote>
+                    </div></article>
+                <aside class="left-article">this 
+                    ssssssssssssssssssss left article</aside> 
+            </div>
+            <aside class="right-article">this os right article</aside>
+        </div>
+        <footer class="footer"></footer>
+    </body>
+</html>

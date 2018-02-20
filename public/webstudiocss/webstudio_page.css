@@ -5,27 +5,41 @@ body, html {
 }
 
 .webstudio .background-image{
-    background-image: url(../Images/webstudio-backgroundimage.jpg);
+    /*background-image: url(../Images/webstudio-backgroundimage.jpg);*/
+    background-image: url(../Images/webstudiolaptopwallpaper.jpg);
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 0.75;
+    /*opacity: 0.75;*/
     color: white;
     background-attachment: fixed;
 }
 .webstudio .background-image-middle{
-    height: 30%;
+    background-image: url(../Images/webstudiolaptopwallpaper.jpg);
+    height: 80%;
+    opacity: 1;
+}
+.webstudio .right-align-text{
+    float: right;
+    width: 50%;
+    margin-right: 5rem;
+    text-align: justify;
+    font-size: 25px;
+    /*margin-bottom: 50px;*/
 }
 .webstudio .background-image-botttom{
     height: 30%;
+    opacity: 1;
+    background-image: url(../Images/webstudiolaptopwallpaper.jpg);
+
 }
 .webstudio .header{
     width: 100%;
     height: 3rem;
-    background-color: #00001a;
-    opacity: 0.9;
+    background-color: black;
+    /*opacity: 0.9;*/
 }
 .webstudio .menu{
     display: inline-block;
@@ -48,12 +62,14 @@ body, html {
     padding-left: 32%;
     display: block;
     width: 35rem;
+    position: relative
+        z-index: -1;
 }
 .webstudio .getstarted-input{
     height: 3rem;
     width: 20rem;
     background: transparent;
-    border: 3px solid #00001a;
+    border: 3px solid black;
     border-radius: 8px;
     color: white;
     font-size: 20px;
@@ -66,7 +82,7 @@ body, html {
     color: white;
 }
 .webstudio .btn{
-    background-color: #00001a;
+    background-color: black;
     border: none;
     border-radius: 8px;
     color: white;
@@ -75,11 +91,11 @@ body, html {
     width: 6rem;
 }
 .webstudio .btn:hover{
-    background-color: #000033;
+    background-color: #0000;
     cursor: pointer;
 }
 .webstudio .btn:active{
-    background-color: #00001a;
+    background-color: black;
 }
 .webstudio .btn:focus{
     outline: none;
@@ -93,7 +109,7 @@ body, html {
     color: white;
 }
 .webstudio .Tutorial{
-    background: linear-gradient(#00001a,black);
+    background: linear-gradient(black,black);
     padding: 2rem;
 }
 .webstudio .label-instruction{
@@ -104,14 +120,16 @@ body, html {
 .webstudio .tutorial-container{
     height: 20rem;
     width: 20rem;
-    border: 2px solid #00001a;
+    border: 2px solid black;
     border-radius: 20px;
     display: inline-block;
     margin: 3rem;
     cursor: pointer;
-    background-color: #000033;
-    opacity: 0.4;
+    background-color: #0000;
+    /*opacity: 0.4;*/
     text-align: justify;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 1px 2px rgba(0,0,0,0.9);
+    transition: all 0.7s cubic-bezier(.25,.8,.25,1);
 }
 .webstudio .heading{
     font-size: 50px;
@@ -144,10 +162,24 @@ body, html {
 }
 .webstudio .tutorial-container:hover{
     opacity: 0.7;
-    background-color:  #000033;
-    border: 2px dotted white;
+    background-color:  #0000;
+    /*border:2px dotted white;*/
+    box-shadow: 0px 14px 28px rgba(128,128,128,128), 0px 10px 10px rgba(128,128,128,128);
+
 }
 .webstudio .footer{
     height: 20%;
-    background-color: #00001a;  
+    background-color: black;  
 }
+/*START:header-block*/
+.webstudio .header-block{
+    height:13rem;
+    background-color: black;
+    display: none;
+    opacity: 1;
+    width: 100%;
+    position: absolute;
+}
+
+
+/*END:header-block*/
